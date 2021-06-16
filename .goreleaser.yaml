@@ -1,0 +1,38 @@
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+
+checksum:
+  name_template: checksums.txt
+
+snapshot:
+  name_template: "{{ .ShortCommit }}"
+
+brews:
+  - tap:
+      owner: adnsio
+      name: homebrew-tap
+    description: Build an iso9660 cloud-init image in seconds
+    homepage: https://github.com/adnsio/mkcloudinit
+    skip_upload: true
+    test: |
+      system "#{bin}/mkcloudinit -h"
+    install: |
+      bin.install "mkcloudinit"
+
+release:
+  github:
+    owner: adnsio
+    name: mkcloudinit
+  disable: true
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
