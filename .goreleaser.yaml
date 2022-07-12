@@ -1,3 +1,6 @@
+changelog:
+  use: github
+
 brews:
   - tap:
       owner: adnsio
@@ -7,3 +10,4 @@ brews:
       email: hello@adns.io
     description: Build an iso9660 cloud-init image in seconds
     homepage: https://github.com/adnsio/mkcloudinit
+    skip_upload: "true"
