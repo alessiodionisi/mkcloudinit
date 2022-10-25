@@ -4,13 +4,13 @@ go 1.18
 
 require (
 	github.com/diskfs/go-diskfs v1.2.0
-	github.com/spf13/cobra v1.5.0
+	github.com/spf13/cobra v1.6.1
 )
 
 require (
 	github.com/frankban/quicktest v1.14.3 // indirect
 	github.com/google/uuid v1.1.1 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/pierrec/lz4 v2.3.0+incompatible // indirect
 	github.com/pkg/xattr v0.4.1 // indirect
 	github.com/sirupsen/logrus v1.7.0 // indirect
