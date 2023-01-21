@@ -3,11 +3,11 @@ changelog:
 
 brews:
   - tap:
-      owner: adnsio
+      owner: alessiodionisi
       name: homebrew-tap
     commit_author:
       name: Alessio Dionisi
       email: hello@adns.io
     description: Build an iso9660 cloud-init image in seconds
-    homepage: https://github.com/adnsio/mkcloudinit
+    homepage: https://github.com/alessiodionisi/mkcloudinit
     skip_upload: "true"
