@@ -82,7 +82,7 @@ func newCommand() *cobra.Command {
 func runCommand(opts *commandOptions) error {
 	size := 10 * 1024 * 1024
 
-	diskFile, err := diskfs.Create(opts.output, int64(size), diskfs.Raw)
+	diskFile, err := diskfs.Create(opts.output, int64(size), diskfs.Raw, diskfs.SectorSizeDefault)
 	if err != nil {
 		return err
 	}
